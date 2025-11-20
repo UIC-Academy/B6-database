@@ -1,0 +1,102 @@
+# Basic SELECT exercises
+
+- Retrieve all data from the `film` table.
+- Retrieve the `first_name` and `last_name` from the `customer` table.
+- Retrieve all unique `rating` values from the `film` table.
+- Retrieve all films with a `rental_rate` greater than 4.00.
+- Retrieve the actors whose `first_name` is exactly 'PENELOPE'.
+- Insert a new actor with `first_name` 'LUCY' and `last_name` 'VAN PELT'.
+- Retrieve the film with the `title` exactly 'ACADEMY DINOSAUR'.
+- Retrieve all actors whose `last_name` is 'NOLTE'.
+- Retrieve all films with a `replacement_cost` less than 10.00.
+- Insert a new language named 'FINNISH'.
+- Retrieve the `title` and `release_year` of all films.
+- Retrieve all unique `language_id` values from the `film` table.
+- Retrieve customers with `customer_id` equal to 50.
+- Retrieve all films released in the year 2006.
+- Retrieve all actors whose `first_name` is exactly 'SANDRA'.
+- Insert a new category with the name 'MYSTERY'.
+- Retrieve all films with a `rental_duration` equal to 6.
+- Retrieve the `customer_id`, `first_name`, and `email` of all customers.
+- Retrieve all unique combinations of `rating` and `rental_duration` from the `film` table.
+- Retrieve all actors whose `first_name` is 'WHOOPI'.
+- Insert a new film with the `title` 'THE GREAT ESCAPE' and `language_id` 1.
+- Retrieve all films with a `rating` of 'G', 'PG', or 'PG-13'.
+- Retrieve all customers whose `store_id` is 1.
+- Retrieve all actors whose `last_name` is 'DEGENERES'.
+- Retrieve all films with a `rental_rate` between 1.00 and 3.00.
+- Insert a new actor with `first_name` 'CHARLIE'.
+- Retrieve all films with a `replacement_cost` between 12.00 and 18.00.
+- Retrieve all actors ordered by their `last_name`.
+- Retrieve all films ordered by their `title` in descending order.
+- Retrieve all customers ordered by their `first_name`.
+- Insert two new actors: ('BILL', 'MURRAY'), ('SIGOURNEY', 'WEAVER').
+- Retrieve all films with a `rating` of 'R' ordered by `title`.
+- Retrieve actors whose `first_name` is 'SUSAN' ordered by `last_name` descending.
+- Retrieve customers living in district 'Texas'.
+- Retrieve films with a `rating` of 'PG' AND a `rental_rate` less than 3.50.
+- Insert a new language named 'SWEDISH'.
+- Retrieve actors whose `first_name` is 'ED' OR `last_name` is 'GUINESS'.
+- Retrieve customers with `store_id` equal to 2 OR `active` equal to 0.
+- Retrieve films with a `rating` that is NOT 'NC-17'.
+- Retrieve actors whose `first_name` is NOT 'FRED'.
+- Insert a new category named 'THRILLER'.
+- Retrieve customers who are NOT active.
+- Retrieve films with a `rental_duration` greater than 4 AND a `replacement_cost` less than 20.00.
+- Retrieve actors whose `last_name` is 'WAHLBERG' OR `first_name` is 'JULIA'.
+- Retrieve customers with `store_id` 1 AND (`active` is 1 OR `first_name` is 'JENNIFER').
+- Insert a new film with `title` 'SPACE ODYSSEY' and `language_id` 1.
+- Retrieve films that are NOT rated 'G' AND NOT rated 'PG-13'.
+- Retrieve actors whose `first_name` is 'JENNIFER' OR (`last_name` is 'DAVIS' AND `first_name` is NOT 'WALTER').
+- Retrieve films released in 2006 that have a 'PG' rating and a `rental_rate` less than 3.00.
+- Retrieve actors whose `first_name` is NOT 'CARY' AND (`last_name` is 'NOLTE' OR `last_name` is 'DEGENERES').
+- Insert two new languages: ('DUTCH'), ('PORTUGUESE').
+- Retrieve the titles of all films that have the special feature exactly 'Trailers'.
+- Retrieve the first and last names of all actors who appeared in films with a `rating` equal to 'G'.
+- Retrieve the emails of all active customers.
+- Retrieve the titles of all films that have a rental duration equal to 7.
+- Insert three new categories: ('CRIME'), ('FANTASY'), ('MUSICAL').
+- Retrieve the first and last names of all actors whose last name is 'HARRIS'.
+- Retrieve the titles of all films where the description is exactly 'A Epic Drama of a Feminist And a Mad Scientist who must Battle a Woman in A Jet Boat'.
+- Retrieve the customer IDs of all inactive customers whose email address is '[email address removed]'.
+- Retrieve the titles of all films that have the special feature 'Trailers' AND the special feature 'Commentaries'.
+- Insert a new actor with `first_name` 'WOODY'.
+- Retrieve the first and last names of all actors whose first name is 'JOHNNY' and last name is 'CAGE'.
+- Retrieve the titles of all films released in 2006 that have a 'R' rating and a replacement cost greater than 20.00.
+- Retrieve all data from the `language` table.
+- Retrieve the names of all categories.
+- Retrieve all `film_id` and `title` from the `film` table where the `rental_duration` is greater than 5.
+- Insert a new film with `title` 'THE INVISIBLE MAN', `language_id` 1, and `rental_duration` 5.
+- Retrieve all actors whose `actor_id` is less than 10.
+- Retrieve all customers whose `address_id` is greater than 300.
+- Retrieve all films that have a special feature of 'Behind the Scenes'.
+- Insert a new actor with `first_name` 'OLIVIA' and `last_name` 'NEWTON-JOHN'.
+- Retrieve the `title` of all films that have a `rating` of 'PG-13' and a `rental_rate` less than 3.00.
+- Retrieve the `first_name` and `last_name` of all actors whose last name is 'SWAYZE'.
+- Retrieve all films where the `replacement_cost` is greater than twice the `rental_rate`.
+- Insert a new language named 'JAPANESE'.
+- Retrieve all customers whose `first_name` is 'KEVIN'.
+- Retrieve all films that were released in 2006 and have a `rental_duration` equal to 7.
+- Retrieve the `first_name` of all actors whose `last_name` is 'TEMPLE'.
+- Retrieve all films with a `rating` of 'G' and a `replacement_cost` less than 12.00.
+- Insert a new category named 'ADVENTURE'.
+- Retrieve all customers whose `email` address is '[email address removed]'.
+- Retrieve the `title` and `rating` of all films ordered by `rating` in ascending order.
+- Retrieve the `first_name` and `last_name` of all actors ordered by `first_name` descending.
+- Retrieve all films with a `rental_rate` greater than (SELECT AVG(rental_rate) FROM film).
+- Insert a new film with `title` 'TIME TRAVELERS', `language_id` 1, and `replacement_cost` 25.99.
+- Retrieve all actors whose `first_name` is 'CARY' OR `first_name` is 'AUDREY'.
+- Retrieve all customers who are active AND whose `last_name` is 'WILLIAMS'.
+- Retrieve all films that have the special feature 'Commentaries' AND a `rental_rate` less than 3.50.
+- Insert a new actor with `first_name` 'CLINT'.
+- Retrieve the `title` of all films that have a `replacement_cost` greater than 15.00 AND a `rating` of 'R'.
+- Retrieve the `customer_id` and `first_name` of all customers whose `address_id` is less than 100.
+- Retrieve all films where the special features are NULL.
+- Insert a new language named 'KOREAN'.
+- Retrieve all actors whose `last_name` is 'NOLTE'.
+- Retrieve all films with a `rental_duration` greater than or equal to 4 AND a `rental_duration` less than or equal to 6 AND a `rating` equal to 'PG'.
+- Insert a new category named 'ANIMATION'.
+- Retrieve all customers whose `email` address is '[email address removed]'.
+- Retrieve the `title` of all films where the description is exactly 'A Fast-Paced Documentary of a Pastry Chef And a Dentist who must лицевой бой a Dentist in A Jet Boat'.
+- Insert a new actor with `first_name` 'GRACE' and `last_name` 'KELLY'.
+- Retrieve all films released in 2006 that have a `replacement_cost` greater than (SELECT AVG(replacement_cost) FROM film).
