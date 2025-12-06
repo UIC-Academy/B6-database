@@ -27,3 +27,16 @@
 18. Check if `payment_id` column in `payment` table is marked as `PRIMARY KEY`.
 19. Find which columns in `film` table have **CHECK** or **DEFAULT** constraints (e.g., rental_rate, rating).
 20. Inspect `store` table; identify its **primary key** and any **unique** constraints.
+
+
+
+---
+
+
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly
