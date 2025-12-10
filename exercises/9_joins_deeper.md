@@ -1,66 +1,47 @@
-# SQL JOINS deeper
+### 20 LEFT JOIN Exercises (Progressive)
 
-### INNER JOIN (Fundamentals)
+1. Retrieve all customers and their rental information, if available.
+2. List all actors and the films they have acted in, if any.
+3. Display all categories and the films associated with each category, if available.
+4. Get a list of employees and their respective stores, if assigned.
+5. Retrieve a list of customers and their payments, if any.
+6. Show all films and their rental durations, if available.
+7. Retrieve all stores and the employees who work at each store, if any.
+8. List all films and the number of times they have been rented, if any.
+9. Display all customers and their rental history.
+10. List all customers and the payments they made in the last 30 days.
+11. Retrieve all actors and the films they have acted in, including those who have not acted in any film.
+12. Get a list of films and their rental prices, if available.
+13. Show a list of customers and the stores they are associated with, if any.
+14. Display all films and their rental rates, including those without rentals.
+15. List all films and the amount paid by customers who rented them.
+16. Retrieve all films and the actors who starred in them, even if no actor is associated with the film.
+17. Get a list of all customers and the staff members who served them, if applicable.
+18. Show a list of all rentals and the corresponding customer information, if available.
+19. List all stores and the total payments made by customers at each store, if applicable.
+20. Retrieve all films and the payments made by customers who rented them, if any.
 
-1. List each product name with its brand (assuming `brand_id → brand` mapping).
-2. Show cart items with product names and user who owns the cart.
-3. List all reviews with the product name and the reviewer's username.
-4. Show all images with the associated product name.
-5. Find all users who have reviewed at least one product, along with the review text.
-6. List cart items with product price and total cost (`price * count`).
-7. List each product with its available sizes.
-8. Show products and their discount amounts (from `ProductDiscountM2M`).
-9. List all product colors using the many-to-many color mapping.
-10. List products that have images and reviews.
+---
 
-### LEFT JOIN (Optional Relationships)
+### 20 RIGHT JOIN Exercises (Progressive)
 
-1. List all users and any review they may have written (if any).
-2. List all products and any image (show NULL if no image).
-3. List all products and their discount (even if no discount exists).
-4. Show each cart and the associated user's username.
-5. Show each product and its sizes (if no size exists, show NULL).
-6. List users and carts they own (some may not own any).
-7. List all products and all their reviews (NULL if no review).
-8. List all products with possible discounts and sizes.
-9. List each cart item with possible related image of the product.
-10. Show products with their reviews and their reviewers’ usernames (show product even if no review).
-
-### RIGHT JOIN (Reverse Optional Relationships)
-
-1. List all reviews and their users (some reviews may have lost user data).
-2. List all images and the users who uploaded them (user may be deleted).
-3. Show all cart items and the products they reference (may reference non-existent product).
-4. List all product-color mappings, and the corresponding product names.
-5. List all product-size mappings, and corresponding size names.
-6. List all discount-product mappings and the product data.
-7. Show all product reviews and include product name and user data.
-8. Show all cart items and their carts (some orphaned cart items?).
-9. Show all images and products they relate to (missing product shows NULL).
-10. List all reviews and the full reviewer name (some with NULL).
-
-### FULL OUTER JOIN (Complete Coverage)
-
-1. List all products and all reviews (even if not matched).
-2. List all users and all images (even if no user or image is missing).
-3. List all carts and users (include unmatched).
-4. Show all product-discount matches or standalone products/discounts.
-5. List all products and their cart items (if any).
-6. List all colors used and products using them (include orphan colors).
-7. Show all sizes and products using them (if any).
-8. List all reviews with user and product data, but include unmatched records.
-9. List all cart items and related carts or products (fully matched or not).
-10. List all image-product-user mappings (include all unmatched).
-
-### CROSS JOIN (Combinations)
-
-1. Get all possible combinations of users and products (for test data generation).
-2. Show all possible color-size combinations.
-3. List all combinations of users and discounts.
-4. Generate a report of all possible cart-product pairs.
-5. Show all possible product-review combinations (for mock matching).
-6. Cross join products and sizes to simulate inventory planning.
-7. Create a list of all user-product pairings (for recommender testing).
-8. Combine all discounts and all products for testing future discount planning.
-9. Cross join users and colors to simulate theme preferences.
-10. Generate a full matrix of users, products, and sizes (three-table cross logic).
+1. Retrieve all payments and the customer details associated with each payment.
+2. List all actors and the films they have acted in, even if no actor is available.
+3. Get a list of films and their categories, including films that do not belong to a category.
+4. Show all rentals and the customer who rented each film, including rentals with no customer.
+5. Retrieve all rental payments and their corresponding rental details, including payments with no rentals.
+6. Display a list of all films and the actors who starred in them, including films with no actors.
+7. Get a list of all films and the store details associated with each rental.
+8. Retrieve all payments and the employees who processed those payments.
+9. Show all customers and their rental history, even for customers with no rentals.
+10. List all categories and the films associated with each category, even if a category has no films.
+11. Retrieve all payments and the rental information tied to each payment.
+12. List all rentals and the films that were rented, even for rentals with no films.
+13. Show a list of customers and the employees who served them, including customers with no employee assignment.
+14. Display all films and their rental rates, including films with no rentals.
+15. Retrieve all rentals and the films associated with each rental, including rentals with no films.
+16. List all stores and the customers who have rented films from them, even stores with no customers.
+17. Retrieve all actors and the films they have been in, even if no film is associated with the actor.
+18. Show a list of all payments and their related customer and rental details, including payments with no rental or customer.
+19. List all customers and the payments they have made, including those who have made no payments.
+20. Retrieve all films and the categories they belong to, even if a film has no category.
