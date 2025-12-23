@@ -28,3 +28,6 @@ class Post(Base):
     content: Mapped[str] = mapped_column(String(255))
     is_published: Mapped[bool] = mapped_column(Boolean, default=True)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    
+    def __repr__(self):
+        return f"Post(title={self.title})"

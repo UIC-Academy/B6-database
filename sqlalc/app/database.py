@@ -20,9 +20,9 @@ from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
 DB_URL = "postgresql+psycopg2://postgres:voidpostgres@localhost:5432/mytest2_db"
 
-engine = create_engine(DB_URL, echo=True)
+engine = create_engine(DB_URL, echo=True) # conn
 
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine) # cursor
 
 
 class Base(DeclarativeBase):

@@ -31,6 +31,7 @@ def update_user(session: Session, user_id, email=None, password=None):
     user_obj.email = email
     user_obj.password = password
     
+    # Lazy evaluation
     session.commit()
     session.refresh(user_obj)
     
